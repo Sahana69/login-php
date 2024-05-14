@@ -1,0 +1,124 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling header */
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+/* Styling navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styling logo */
+nav img {
+    height: 100px; 
+}
+
+/* Styling navigation links */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #d48612;
+}
+
+/* Styling login form */
+.Header-login form {
+    display: flex;
+}
+
+.Header-login form input[type="text"],
+.Header-login form input[type="password"],
+.Header-login form button[type="submit"],
+.Header-login form .header-signup button {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.header-signup button {
+    background-color: #d48612;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button {
+    background-color: #d48612;
+}
+/* Styling signup form */
+.wrapper-main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.section-default {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.section-default h1 {
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+.section-default input[type="text"],
+.section-default input[type="password"],
+.section-default button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+}
+
+.section-default button[type="submit"] {
+    background-color: #d48612;
+    color: white;
+    cursor: pointer;
+}
+
+.section-default input[type="text"]:focus,
+.section-default input[type="password"]:focus {
+    outline: none;
+    border: 1px solid #d48612;
+}
+
+/* Style for error and success messages */
+.signuperror,
+.signupsuccess {
+    background-color: #d48612;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: center; 
+}
